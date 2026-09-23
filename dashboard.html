@@ -1,0 +1,7 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Control Center</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div class="logo">CONTROL <span>CENTER</span></div><div class="online"><span class="dot"></span>SYSTEM ONLINE</div></header><main class="panel">
+<div class="panelhead"><h2>CONTROL CENTER</h2><small>SYSTEM ONLINE • DEMO PANEL</small></div>
+<div class="stats"><div class="stat">TODAY<b>0</b></div><div class="stat">YESTERDAY<b>0</b></div><div class="stat">TOTAL<b>0</b></div></div>
+<div class="panelhead"><b>NAVIGATION MENU</b><div class="navgrid"><div class="nav active">📝<br>Nama</div><div class="nav">▣<br>Ukuran</div><div class="nav">✉<br>Email</div><div class="nav">▣<br>Result</div><div class="nav">↪<br>Login</div><div class="nav">🔑<br>Token</div></div></div>
+<div class="setting"><h3>Pengaturan Nama File</h3><label>Nama file saat ini</label><input value="demo-web" readonly><label>Input nama file baru</label><input id="name" placeholder="Masukkan nama file baru..."><button class="save" onclick="saveName()">SIMPAN PERUBAHAN</button><p id="msg"></p></div></main>
+<script>function saveName(){let n=document.getElementById('name').value.trim();document.getElementById('msg').textContent=n?'Tersimpan sebagai: '+n:'Silakan isi nama file.'}</script></body></html>

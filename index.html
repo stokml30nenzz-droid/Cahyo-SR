@@ -1,74 +1,9 @@
-<!doctype html>
-<html lang="id">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cahyo SR — Personal Website</title>
-<style>
-:root{--bg:#07111f;--card:#0e1c30;--text:#eef6ff;--muted:#a9b8ca;--accent:#39b9ff;--accent2:#7c5cff}
-*{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at top right,#17345c 0,#07111f 45%);color:var(--text)}
-nav{position:sticky;top:0;z-index:5;background:#07111fcc;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff14}
-.navin{max-width:1100px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800;font-size:21px}.logo span{color:var(--accent)}
-nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:14px}
-nav a:hover{color:white}
-.hero{min-height:82vh;display:grid;place-items:center;padding:70px 22px}
-.hero-inner{max-width:1100px;width:100%;display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center}
-.badge{display:inline-block;padding:8px 13px;border:1px solid #39b9ff55;background:#39b9ff12;border-radius:999px;color:#8edaff;font-size:13px}
-h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:18px 0}
-h1 span{background:linear-gradient(90deg,#39b9ff,#9d7cff);-webkit-background-clip:text;color:transparent}
-.hero p{color:var(--muted);font-size:18px;line-height:1.7;max-width:650px}
-.buttons{margin-top:28px}.btn{display:inline-block;padding:13px 20px;border-radius:12px;text-decoration:none;font-weight:700;margin-right:8px;margin-bottom:8px}
-.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:white}.secondary{border:1px solid #ffffff22;color:white}
-.profile{height:330px;width:330px;border-radius:35px;background:linear-gradient(145deg,#16385d,#0b1728);border:1px solid #ffffff18;display:grid;place-items:center;box-shadow:0 30px 80px #0008;margin:auto}
-.initial{width:190px;height:190px;border-radius:50%;display:grid;place-items:center;font-size:60px;font-weight:800;background:linear-gradient(135deg,#39b9ff,#7c5cff)}
-section{max-width:1100px;margin:auto;padding:80px 22px}.section-title{font-size:34px;margin:0 0 12px}.sub{color:var(--muted);line-height:1.6}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
-.card{background:linear-gradient(145deg,#0e1c30,#0a1627);border:1px solid #ffffff10;border-radius:20px;padding:25px;transition:.25s}
-.card:hover{transform:translateY(-5px);border-color:#39b9ff55}.icon{font-size:28px}.card h3{margin-bottom:8px}.card p{color:var(--muted);line-height:1.6}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact a{color:#8edaff;text-decoration:none}
-footer{text-align:center;padding:35px 20px;border-top:1px solid #ffffff10;color:#7f91a6}
-@media(max-width:760px){.hero-inner,.contact{grid-template-columns:1fr}.profile{width:250px;height:250px}.grid{grid-template-columns:1fr}nav a{margin-left:9px;font-size:12px}h1{font-size:48px}}
-</style>
-</head>
-<body>
-<nav><div class="navin"><div class="logo">Cahyo <span>SR</span></div>
-<div><a href="#tentang">Tentang</a><a href="#keahlian">Keahlian</a><a href="#kontak">Kontak</a></div></div></nav>
-
-<header class="hero">
-<div class="hero-inner">
-<div>
-<span class="badge">PERSONAL WEBSITE • 2026</span>
-<h1>Halo, saya <span>Cahyo SR.</span></h1>
-<p>Selamat datang di website pribadi Cahyo SR. Tempat untuk memperkenalkan profil, keahlian, kegiatan, dan informasi kontak secara profesional.</p>
-<div class="buttons"><a class="btn primary" href="#tentang">Kenal Lebih Dekat</a><a class="btn secondary" href="#kontak">Hubungi Saya</a></div>
-</div>
-<div class="profile"><div class="initial">CSR</div></div>
-</div>
-</header>
-
-<section id="tentang">
-<h2 class="section-title">Tentang Saya</h2>
-<p class="sub">Website ini dapat kamu ubah sesuai kebutuhan. Tambahkan foto, biodata, portofolio, pengalaman, pendidikan, atau informasi lain yang ingin ditampilkan.</p>
-</section>
-
-<section id="keahlian">
-<h2 class="section-title">Keahlian</h2><p class="sub">Contoh bagian keahlian yang bisa ditampilkan.</p>
-<div class="grid">
-<div class="card"><div class="icon">⚓</div><h3>Disiplin</h3><p>Terbiasa bekerja dengan tanggung jawab dan mengikuti prosedur.</p></div>
-<div class="card"><div class="icon">🧭</div><h3>Navigasi</h3><p>Contoh profil keterampilan dasar yang dapat disesuaikan dengan bidang kamu.</p></div>
-<div class="card"><div class="icon">🤝</div><h3>Kerja Tim</h3><p>Mampu bekerja sama dan berkomunikasi dengan anggota tim.</p></div>
-</div>
-</section>
-
-<section id="kontak">
-<h2 class="section-title">Kontak</h2>
-<div class="card contact">
-<div><h3>Hubungi Cahyo SR</h3><p class="sub">Ganti data di bawah dengan kontak asli kamu.</p></div>
-<div><p>📱 WhatsApp: <a href="https://wa.me/6285282657647" target="_blank">085282657647</a></p></div>
-</div>
-</section>
-<footer>© 2026 Cahyo SR — Personal Website</footer>
-</body>
-</html>
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create Web Demo</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div><span class="year">2026</span><span class="logo">CAHYO<span>SR</span></span></div><div class="online"><span class="dot"></span>ONLINE</div></header>
+<main class="wrap"><div class="title">CREATE WEB <span>VIP</span></div><div class="sub">SELAMAT MENGGUNAKAN DEMO WEB MILIK ANDA SENDIRI</div>
+<section class="grid">
+<div class="card"><div class="thumb">▶</div><div class="body"><h3>MEDIA DEMO</h3><a class="btn" href="success.html">BUAT SEKARANG</a></div></div>
+<div class="card"><div class="thumb">▶</div><div class="body"><h3>VIDEO DEMO</h3><a class="btn" href="success.html">BUAT SEKARANG</a></div></div>
+<div class="card"><div class="thumb">☁</div><div class="body"><h3>GROUP DEMO</h3><a class="btn" href="success.html">BUAT SEKARANG</a></div></div>
+<div class="card"><div class="thumb">★</div><div class="body"><h3>WEB DEMO</h3><a class="btn" href="success.html">BUAT SEKARANG</a></div></div>
+</section></main></body></html>
